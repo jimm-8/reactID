@@ -1,5 +1,5 @@
 import React from 'react';
-import IDCard from './IDCard';
+import IDCard from './components/IDCard';
 import Payslip from './Payslip';
 
 const App = () => {

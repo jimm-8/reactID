@@ -1,8 +1,8 @@
 import React from 'react';
-import './index.css';
-import Logo from './assets/logo.png';
-import Bg from './assets/img-bg.png';
-import User from './assets/img1.png';
+import './IDCard.css';
+import logo from '../assets/logo.png';  // Use relative path to assets
+import bg from '../assets/img-bg.png';
+import userImg from '../assets/img1.png';
 
 const IDCard = () => {
     return (
@@ -10,16 +10,16 @@ const IDCard = () => {
             <div className="id-front">
                 <div className="id-header">
                     <div className="id-header-left">
-                        <img src={Logo} alt="logo" className="id-logo" />
+                        <img src={logo} alt="logo" className="id-logo" />
                     </div>
                     <div className="id-header-right">
                         <h1 className="id-title">St.JohnMajore</h1>
                         <p className="id-subtitle">#8 De Villa St., Poblacion, San Juan, Batangas</p>
                     </div>
                 </div>
-                <div className="id-content">
+                <div className="id-content" style={{ backgroundImage: `url(${bg})` }}>
                     <div className="user-img">
-                        <img src={User} alt="user" className="user-img" />
+                        <img src={userImg} alt="user" className="user-img" />
                     </div>
                     <div className="user-info">
                         <p className="user-id">ID NO. M-XXXXX</p>
@@ -31,7 +31,7 @@ const IDCard = () => {
             </div>
 
             <div className="id-back">
-                <div className="id-content-back">
+                <div className="id-content-back" style={{ backgroundImage: `url(${bg})` }}>
                     <div className="user-info-back">
                         <p className="address">505 Kalyeng Putol, Maraykit, San Juan,<br /> Batangas</p>
                         <p className="sss">SSS: XX-XXXXXXX-X</p>
@@ -53,7 +53,7 @@ const IDCard = () => {
                 </div>
                 <div className="id-footer">
                     <div className="id-footer-left">
-                        <img src={Logo} alt="logo" className="footer-logo" />
+                        <img src={logo} alt="logo" className="footer-logo" />
                     </div>
                     <div className="id-footer-right">
                         <p className="footer-title">St.JohnMajore Services Company Inc.</p>
